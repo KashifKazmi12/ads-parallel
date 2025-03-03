@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ADS Parallel - Best Marketing Solutions for Your Business</title>
+
+    <!-- Flowbite -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="/global.css">
+    <script src="/tailwind.config.js"></script>
+    <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon">
+
+    <!-- Logo slider -->
+    <link rel="stylesheet" href="/assets/css/logo-slider.css">
+
+    <!-- services-section-style -->
+    <link rel="stylesheet" href="/assets/css/services.css">
+</head>
+
+<body class="bg-gray-50 dark:bg-gray-800">
+
+
+    <header class="sticky w-full z-20 top-2 start-0 mt-4 px-2 md:px-0">
+        <nav class="relative">
+            <div
+                class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-5 px-5 bg-white dark:bg-gray-700 border shadow-lg rounded-xl border-gray-200 dark:border-gray-600">
+                <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse uppercase">
+                    <img src="/assets/logo.png" class="h-10" alt="Flowbite Logo">
+                    <span class="font-bold text-lg md:text-2xl dark:text-white">Ads <span
+                            class="text-primary">Parallel</span></span>
+                    <!-- <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Ads Parallel</span> -->
+                </a>
+                <div class="flex lg:order-2 space-x-1 md:space-x-3 lg:space-x-0 rtl:space-x-reverse">
+                    <button id="theme-toggle" type="button"
+                        class="mx-2 text-gray-500 dark:text-gray-400 hover:bg-gray-100 dark:hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-700 rounded-lg text-sm p-2.5">
+                        <!-- Sun icon for light mode -->
+                        <svg id="theme-toggle-light-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+                                fill-rule="evenodd" clip-rule="evenodd"></path>
+                        </svg>
+                        <!-- Moon icon for dark mode -->
+                        <svg id="theme-toggle-dark-icon" class="hidden w-5 h-5" fill="currentColor" viewBox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+                        </svg>
+                    </button>
+                    <a href="/contact.html">
+                        <button type="button"
+                            class="text-white bg-primary hover:bg-primary/80 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-xs sm:text-sm md:text-base px-6 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-semibold hidden sm:block">Get
+                            a Quote</button>
+                    </a>
+                    <button data-collapse-toggle="navbar-sticky" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="items-center justify-between mt-10 md:mt-0 hidden h-[72vh] lg:h-auto overflow-y-auto lg:min-h-0 w-full lg:flex lg:w-auto lg:order-1"
+                    id="navbar-sticky">
+                    <ul class="flex flex-col p-4 lg:p-0 mt-4 font-medium border border-gray-100 rounded-lg  lg:space-x-8 rtl:space-x-reverse lg:flex-row lg:mt-0 lg:border-0  dark:bg-gray-600"
+                        style="padding: 4px 20px;">
+                        <li>
+                            <a href="/"
+                                class="block py-2 px-3 text-white bg-primary rounded-sm md:bg-transparent md:text-primary md:p-0 md:dark:text-primary font-semibold"
+                                aria-current="page">Home</a>
+                        </li>
+                        <li>
+                            <a href="about.html"
+                                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-primary dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 font-semibold">About</a>
+                        </li>
+                        <!-- <li>
+                            <a href="services.html"
+                                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 font-semibold">Services</a>
+                        </li> -->
+                        <li class="group">
+                            <button
+                                class="flex cursor-pointer items-center justify-between w-full py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-primary md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 font-semibold">
+                                Services
+                                <svg class="w-2.5 h-2.5 ms-2.5 hidden lg:block" aria-hidden="true"
+                                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                        stroke-width="2" d="m1 1 4 4 4-4" />
+                                </svg>
+                            </button>
+                            <div
+                                class="relative lg:absolute left-0 lg:top-20 w-full block lg:hidden lg:group-hover:block">
+                                <div id="mega-menu-full-dropdown"
+                                    class="my-1 border-gray-200 shadow-xs bg-gray-50 rounded-xl md:bg-white border-y dark:bg-gray-800 dark:border-gray-600 lg:container mx-auto">
+                                    <div
+                                        class="grid px-0 py-2 lg:py-5 mx-auto text-gray-900 dark:text-white lg:grid-cols-3 lg:px-6">
+                                        <ul class="flex flex-col gap-1 lg:gap-0">
+                                            <li>
+                                                <a href="/services-detail.html?service=digital-marketing"
+                                                    class="block px-2 lg:p-3 rounded-lg transition duration-200 hover:text-primary dark:hover:bg-gray-700">
+                                                    <div class="lg:font-semibold">Digial Marketing</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/services-detail.html?service=social-media-marketing"
+                                                    class="block px-2 lg:p-3 rounded-lg transition duration-200 hover:text-primary dark:hover:bg-gray-700">
+                                                    <div class="lg:font-semibold">Social Media Marketing</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/services-detail.html?service=design-services"
+                                                    class="block px-2 lg:p-3 rounded-lg transition duration-200 hover:text-primary dark:hover:bg-gray-700">
+                                                    <div class="lg:font-semibold">Design Services</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/services-detail.html?service=video-editing"
+                                                    class="block px-2 lg:p-3 rounded-lg transition duration-200 hover:text-primary dark:hover:bg-gray-700">
+                                                    <div class="lg:font-semibold">Video Editing</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/services-detail.html?service=seo"
+                                                    class="block px-2 lg:p-3 rounded-lg transition duration-200 hover:text-primary dark:hover:bg-gray-700">
+                                                    <div class="lg:font-semibold">SEO Services</div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <ul class="flex flex-col gap-1 lg:gap-0">
+                                            <li>
+                                                <a href="/services-detail.html?service=email-marketing"
+                                                    class="block px-2 lg:p-3 rounded-lg transition duration-200 hover:text-primary dark:hover:bg-gray-700">
+                                                    <div class="lg:font-semibold">Email Marketing Services</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/services-detail.html?service=content-marketing"
+                                                    class="block px-2 lg:p-3 rounded-lg transition duration-200 hover:text-primary dark:hover:bg-gray-700">
+                                                    <div class="lg:font-semibold">Content Marketing</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/services-detail.html?service=gbp-optimization"
+                                                    class="block px-2 lg:p-3 rounded-lg transition duration-200 hover:text-primary dark:hover:bg-gray-700">
+                                                    <div class="lg:font-semibold">Google Business Profile</div>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="/services-detail.html?service=pay-per-click"
+                                                    class="block px-2 lg:p-3 rounded-lg transition duration-200 hover:text-primary dark:hover:bg-gray-700">
+                                                    <div class=" lg:font-semibold">Pay Per Click</div>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                        <div>
+                                            <img src="/assets/services banner.jpg"
+                                                class="w-full h-72 object-cover hidden lg:block rounded-xl" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute -z-0 top-12 left-0 h-16 w-full hidden group-hover:block"></div>
+                        </li>
+
+                        <li>
+                            <a href="brands.html"
+                                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 font-semibold">Brands</a>
+                        </li>
+                        <li>
+                            <a href="/creators.html"
+                                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 font-semibold">Creators</a>
+                        </li>
+                        <li>
+                            <a href="/contact.html"
+                                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700 font-semibold">Contact</a>
+                        </li>
+                        <!-- <li>
+                            <a href="/contact.html">
+                                <button type="button"
+                                    class="text-white bg-primary hover:bg-primary/80 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg text-xs sm:text-sm md:text-base px-6 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 font-semibold block sm:hidden">Get a Quote</button>
+                                </a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section class="" id="particles-js"></section>
+
+    <div
+        class="hero flex flex-col-reverse md:flex-row justify-between max-w-screen-xl mx-auto py-6 px-4 md:px-6 lg:px-2 min-h-[360px] items-center">
+        <div class="left w-full text-3xl md:text-4xl xl:text-6xl flex-1 font-semibold dark:text-gray-100 capitalize">
+            <h1>Enjoy a Strong Digital </h1>
+            <h1><span class="text-primary">Footprint</span> of Your Business</h1>
+        </div>
+        <div class="right flex-1 ">
+            <div class="md:w-2/4 mx-auto flex flex-col gap-8">
+                <img src="/assets/arrow-down.svg" class="w-7 h-7 bg-primary p-2 rounded-full" alt="">
+                <p class="dark:text-gray-200">At Ads Parallel, we take charge of setting your brand apart from your
+                    competition, boosting your reach and return on investment.</p>
+            </div>
+        </div>
+    </div>
+
+    <video autoplay muted loop controls controlsList="nodownload" class="my-8 w-full">
+        <source src="/assets/Upbeat-Inspiring-Uplifting-Stomps-Claps-Percussion-By-D-Music.mp4">
+
+    </video>
+
+    <section class="relative">
+        <div class="container mx-auto flex flex-col-reverse md:flex-row mt-24 mb-16 px-3 md:px-0">
+            <div class="left flex-1 md:pr-12 lg:pl-2">
+                <img src="/assets/digital-world.jpg" class="rounded-lg w-full md:h-[500px] object-cover"
+                    alt="Explore the Digital World">
+                <img src="/assets/Ornament.png" width="100" class="absolute bottom-0 left-0 rotate-90" alt="">
+            </div>
+            <div class="right flex-1 md:pl-12 md:pr-2 ">
+                <div class="">
+                    <div class="text-lg text-primary flex gap-4 items-center mb-3">
+                        <div class="text tracking-wide">Explore the Digital World</div>
+                        <div class="h-[2px] w-12 bg-primary"></div>
+                    </div>
+                    <h2 class="text-4xl mb-8 font-semibold dark:text-gray-100">Expand Your Online Reach with Ads
+                        Parallel
+                    </h2>
+                    <p class="text-[16px] my-5 dark:text-gray-200">Ads Parallel is a trustworthy and results-driven
+                        digital
+                        marketing and SEO service provider, a compass for navigating the fast-paced digital landscape.
+                        We
+                        are the force behind the extension of your physical businesses online, using a variety of
+                        tactics to
+                        improve your online presence and successfully interact with your target audience.</p>
+                    <p class="text-[16px] mt-5 mb-8 dark:text-gray-200">Our specialists have a breadth of skills that
+                        range
+                        from search engine optimization to creating engaging content and executing paid advertising
+                        campaigns. With our customized strategies, you can expand your audience, boost organic traffic,
+                        and
+                        eventually accomplish your business goals.</p>
+
+                    <div class="flex justify-between mb-6">
+                        <img src="/assets/digital-world-logo-1.png" class="w-[26%]" alt="">
+                        <img src="/assets/digital-world-logo-2.png" class="w-[26%]" alt="">
+                        <img src="/assets/digital-world-logo-3.png" class="w-[26%]" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="logo-slider bg-primary">
+        <div class="logo-track">
+            <img src="/assets/social-logo/Google.png" alt="Logo 1">
+            <img src="/assets/social-logo/Microsoft.png" alt="Logo 2">
+            <img src="/assets/social-logo/Paypal.png" alt="Logo 3">
+            <img src="/assets/social-logo/Skype.png" alt="Logo 4">
+            <img src="/assets/social-logo/Slack.png" alt="Logo 5">
+            <img src="/assets/social-logo/Teamwork.png" alt="Logo 6">
+            <img src="/assets/social-logo/Trello.png" alt="Logo 7">
+            <img src="/assets/social-logo/Google.png" alt="Logo 1">
+            <img src="/assets/social-logo/Microsoft.png" alt="Logo 2">
+            <img src="/assets/social-logo/Paypal.png" alt="Logo 3">
+            <img src="/assets/social-logo/Skype.png" alt="Logo 4">
+            <img src="/assets/social-logo/Slack.png" alt="Logo 5">
+            <img src="/assets/social-logo/Teamwork.png" alt="Logo 6">
+            <img src="/assets/social-logo/Trello.png" alt="Logo 7">
+        </div>
+    </section>
+
+    <!-- Services -->
+    <section class="bg-primary py-20 mt-10" id="services">
+        <div
+            class="services-container container px-3 md:px-0 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3">
+            <div class="px-3">
+                <div class="text-lg text-primary flex gap-4 items-center mb-3">
+                    <div class="text tracking-widest text-white">Our Services</div>
+                    <div class="h-[2px] w-12 bg-white"></div>
+                </div>
+                <h2 class="text-4xl mb-8 font-semibold text-white">Result-Driven Services to Boost Your Online Business
+                </h2>
+            </div>
+            <div class="p-8 rounded-xl border border-gray-300">
+                <a href="/services-detail.html?service=seo">
+                    <img src="/assets/seo.svg" alt="Search Engine Optimization" class="w-12 object-cover mb-4">
+                    <h2 class="text-xl font-semibold text-white mb-3">Search Engine Optimization</h2>
+                    <p class="text-white text-base">Uplift your online presence with our full-service SEO expertize,
+                        driving
+                        organic traffic to your business.</p>
+                </a>
+            </div>
+            <div class="p-8 rounded-xl border border-gray-300">
+                <a href="/services-detail.html?service=pay-per-click">
+                    <img src="/assets/pay-per-click.svg" alt="Search Engine Optimization"
+                        class="w-12 object-cover mb-4">
+                    <h2 class="text-xl font-semibold text-white mb-3">Pay Per Click (PPC Ads)</h2>
+                    <p class="text-white text-base">Amplify your brand’s visibility and reach your targeted audience
+                        through
+                        strategically tailored PPC ad campaigns.
+                    </p>
+                </a>
+            </div>
+            <div class="p-8 rounded-xl border border-gray-300">
+                <a href="/services-detail.html?service=social-media-marketing">
+                    <img src="/assets/social-media-marketing.svg" alt="Search Engine Optimization"
+                        class="w-12 object-cover mb-4">
+                    <h2 class="text-xl font-semibold text-white mb-3">Social Media Marketing</h2>
+                    <p class="text-white text-base">Augment your brand image on social media and connect with your
+                        target
+                        audience with social media marketing services.
+                    </p>
+                </a>
+            </div>
+            <div class="p-8 rounded-xl border border-gray-300">
+                <a href="/services-detail.html?service=content-marketing">
+                    <img src="/assets/content-marketing.svg" alt="Search Engine Optimization"
+                        class="w-12 object-cover mb-4">
+                    <h2 class="text-xl font-semibold text-white mb-3">Content Marketing</h2>
+                    <p class="text-white text-base">Let your content convey what you offer to your customers in the best
+                        way
+                        using our content marketing services.
+                    </p>
+                </a>
+            </div>
+            <div class="p-8 rounded-xl border border-gray-300">
+                <a href="/services-detail.html?service=email-marketing">
+                    <img src="/assets/email-marketing.svg" alt="Search Engine Optimization"
+                        class="w-12 object-cover mb-4">
+                    <h2 class="text-xl font-semibold text-white mb-3">Email Marketing</h2>
+                    <p class="text-white text-base">Reach out to your potential customers through an efficiently
+                        designed
+                        and handled email marketing campaign.
+                    </p>
+                </a>
+            </div>
+            <div class="p-8 rounded-xl border border-gray-300">
+                <a href="/services-detail.html?service=digital-marketing">
+                    <img src="/assets/digital-marketing.svg" alt="Search Engine Optimization"
+                        class="w-12 object-cover mb-4">
+                    <h2 class="text-xl font-semibold text-white mb-3">Digital Marketing</h2>
+                    <p class="text-white text-base">Expand your brand’s reach and drive growth with our tailored digital
+                        marketing solutions.
+                    </p>
+                </a>
+            </div>
+            <div class="p-8 rounded-xl border border-gray-300">
+                <a href="/services-detail.html?service=gbp-optimization">
+                    <img src="/assets/gbp.svg" alt="Search Engine Optimization" class="w-12 object-cover mb-4">
+                    <h2 class="text-xl font-semibold text-white mb-3">Google Business Profile</h2>
+                    <p class="text-white text-base">Our excellent GBP services help surpass your competitors and make
+                        your
+                        business accessible to your audience.
+                    </p>
+                </a>
+            </div>
+            <div class="p-8 rounded-xl border border-gray-300">
+                <a href="/services-detail.html?service=video-editing">
+                    <img src="/assets/video-editing.svg" alt="Search Engine Optimization"
+                        class="w-12 object-cover mb-4">
+                    <h2 class="text-xl font-semibold text-white mb-3">Video Editing</h2>
+                    <p class="text-white text-base">Enhance your visuals with professional video editing that captivates
+                        and
+                        engages your audience.
+                    </p>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Explore the Digital World -->
+    <section class="container my-20 mx-auto px-4 md:px-8">
+        <div></div>
+        <div class="flex flex-col md:flex-row gap-3">
+            <div class="flex-1 px-1">
+                <div class="text-lg text-primary flex gap-4 items-center mb-3">
+                    <div class="text tracking-widest">Explore the Digital World</div>
+                    <div class="h-[2px] w-12 bg-primary"></div>
+                </div>
+                <h2 class="text-4xl mb-8 font-semibold dark:text-gray-100 indent-1">There's a whole world out there</h2>
+            </div>
+            <div class="w-[1px] bg-gray-300 h-16 md:block hidden"></div>
+            <div class="flex-[2] px-4 dark:text-gray-200">
+                <p class="text-xl">We start with your awesome content, then apply our machine learning algorithms
+                    combined with Natural Language.
+                </p>
+                <a href="#services">
+                    <button class="mt-5 flex items-center gap-3"><span>View All Services</span>
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="w-3 -rotate-[135deg] fill-primary"
+                            viewBox="0 0 384 512">
+                            <path
+                                d="M169.4 502.6c12.5 12.5 32.8 12.5 45.3 0l128-128c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 402.7 224 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 370.7L86.6 329.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l128 128z" />
+                        </svg>
+                    </button>
+                </a>
+            </div>
+        </div>
+        <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2">
+            <div
+                class="py-6 px-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                <img src="/assets/explore-the digital-world.svg" class="w-12 h-12" alt="">
+                <a href="#">
+                    <h5 class="mb-2 mt-4 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Creator
+                        Partners</h5>
+                </a>
+                <div class="w-full bg-gray-300 h-[1px] mt-2 mb-4"></div>
+                <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">You know what our most valuable asset is?
+                    It’s people like you, creators! With over 100 creator partners, we are a family that keeps growing.
+                </p>
+            </div>
+            <div
+                class="py-6 px-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                <img src="/assets/explore-the digital-world.svg" class="w-12 h-12" alt="">
+                <a href="#">
+                    <h5 class="mb-2 mt-4 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Monthly
+                        video views</h5>
+                </a>
+                <div class="w-full bg-gray-300 h-[1px] mt-2 mb-4"></div>
+                <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Ads Parallel has been using its data
+                    analysis expertise and tech to optimize content and get our creators the views they are due.
+                </p>
+            </div>
+            <div
+                class="py-6 px-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                <img src="/assets/explore-the digital-world.svg" class="w-12 h-12" alt="">
+                <a href="#">
+                    <h5 class="mb-2 mt-4 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Monthly
+                        Story View
+                    </h5>
+                </a>
+                <div class="w-full bg-gray-300 h-[1px] mt-2 mb-4"></div>
+                <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">We cater to every platform and format to
+                    help our creators expand their viewership and customer base.
+                </p>
+            </div>
+            <div
+                class="py-6 px-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+                <img src="/assets/explore-the digital-world.svg" class="w-12 h-12" alt="">
+                <a href="#">
+                    <h5 class="mb-2 mt-4 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Monthly
+                        unique US viewers
+                    </h5>
+                </a>
+                <div class="w-full bg-gray-300 h-[1px] mt-2 mb-4"></div>
+                <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Directing unique traffic towards our
+                    creators and adding to their existing community by getting them the US-based engagement they’ve
+                    worked for.
+                </p>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="bg-primary">
+        <div class="container mx-auto px-2 md:px-0 flex flex-col items-center py-14">
+            <p class="text-center text-[16px] mb-5 text-white">Is Your Investment Strategy Draining Your Profits?</p>
+            <h1 class="text-center text-[40px] mb-5 text-white font-semibold">Schedule an Appointment to Discuss Your
+                Project Now!</h1>
+            <a href="/contact.html">
+                <button class="font-semibold text-white w-max mx-auto border-2 border-white px-5 py-2 rounded-lg">Get
+                    Our Services Now</button>
+            </a>
+        </div>
+    </section>
+
+    <section class="container px-4 md:px-6 mx-auto my-14">
+        <div>
+            <div class="text-lg text-primary flex gap-4 items-center mb-3">
+                <div class="text tracking-widest">Amplify Your Brand</div>
+                <div class="h-[2px] w-12 bg-primary"></div>
+            </div>
+            <h2 class="text-4xl mb-4 font-semibold dark:text-white">Elevate Your Content</h2>
+            <p class="dark:text-gray-200">In today’s digital world, standing out is essential. At Ads Parallel, we craft
+                engaging, high-impact content that captures attention and drives results. From visuals to storytelling,
+                we elevate your brand’s presence, making every post count. Let’s turn your ideas into content that truly
+                connects.</p>
+        </div>
+        <div class="flex gap-4 w-full mx-auto mt-4 flex-col md:flex-row">
+            <div
+                class="p-8 rounded-xl border border-gray-200 dark:border-gray-400 md:w-1/2 flex items-start md:flex-col lg:flex-row gap-4">
+                <div class="">
+                    <img src="/assets/What-We-Do.png" class="min-w-28" alt="">
+                </div>
+                <div>
+                    <h2 class="text-2xl font-semibold dark:text-white mb-1">Who We Are</h2>
+                    <p class="dark:text-white text-base">Ads Parallel is Media Production company that has redefined
+                        content creation for every social generation. Founded in 2018, Ads Parallel now has a global
+                        presence including offices in Dubai and the United States.
+                    </p>
+                </div>
+            </div>
+            <div
+                class="p-8 rounded-xl border border-gray-200 dark:border-gray-400 md:w-1/2 flex items-start md:flex-col lg:flex-row gap-4">
+                <div class="">
+                    <img src="/assets/What-We-Do.png" class="min-w-28" alt="">
+                </div>
+                <div>
+                    <h2 class="text-xl font-semibold dark:text-white mb-1">What We Do</h2>
+                    <p class="dark:text-white text-base">Ads Parallel operates across all top social media platforms to
+                        optimize content, create strategies, and manage talent for creators.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <div class="w-full"><img src="/assets/banner.png" class="h-36 w-full object-cover object-center" alt=""></div>
+
+    <footer class="bg-white dark:bg-gray-700">
+        <div class="mx-auto w-full pt-6">
+            <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4 place-items-center ">
+                <div class="h-full">
+                    <div
+                        class="mb-6 text-sm font-semibold text-gray-900 flex flex-col gap-3 items-start uppercase dark:text-white">
+                        <img src="/assets/logo.png" class="h-10 md:h-12" alt="">
+                        <span class="font-bold text-lg md:text-2xl dark:text-white">Ads <span
+                                class="text-primary">Parallel</span></span>
+                    </div>
+                    <p class="dark:text-gray-200 text-gray-700
+                    ">With our all-inclusive services, we are helping brands and startups establish and expand their
+                        digital presence and effectively reach their targeted audience.</p>
+                </div>
+                <div class="h-full">
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Company</h2>
+                    <ul class="text-gray-600 dark:text-gray-200 font-medium">
+                        <li class="mb-4">
+                            <a href="/" class="hover:underline">Home</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="/about.html" class=" hover:underline">About</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="/brands.html" class="hover:underline">Brands</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="/creators.html" class="hover:underline">Creators</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="/contact.html" class="hover:underline">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="h-full">
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Services</h2>
+                    <ul class="text-gray-600 dark:text-gray-200 font-medium">
+                        <li class="mb-4">
+                            <a href="/services-detail.html?service=digital-marketing" class="hover:underline">Digital
+                                Marketing</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="/services-detail.html?service=social-media-marketing"
+                                class="hover:underline">Social Media Marketing</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="/services-detail.html?service=design-services" class="hover:underline">Design
+                                Services</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="/services-detail.html?service=video-editing" class="hover:underline">Video
+                                Editing</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="/services-detail.html?service=seo" class="hover:underline">SEO</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="h-full">
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">Head Office
+                    </h2>
+                    <ul class="text-gray-600 dark:text-gray-200 font-medium">
+                        <li class="mb-4">
+                            5680 King Centre Drive Kingstowne, Alexandria VA, 22315, USA
+                        </li>
+                        <li class="mb-4">
+                            hello@adsparallel.com
+                        </li>
+                        <li class="mb-4">
+                            +1 (571) 430-3555
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="px-4 py-6 border-t border-gray-200 md:flex md:items-center md:justify-between">
+                <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2023 <a
+                        href="https://flowbite.com/">Ads Parallel</a>. All Rights Reserved.
+                </span>
+                <div class="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
+                    <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 8 19">
+                            <path fill-rule="evenodd"
+                                d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">Facebook page</span>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 21 16">
+                            <path
+                                d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z" />
+                        </svg>
+                        <span class="sr-only">Discord community</span>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 17">
+                            <path fill-rule="evenodd"
+                                d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">Twitter page</span>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">GitHub account</span>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                        <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                            viewBox="0 0 20 20">
+                            <path fill-rule="evenodd"
+                                d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z"
+                                clip-rule="evenodd" />
+                        </svg>
+                        <span class="sr-only">Dribbble account</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            "particles": {
+                "number": {
+                    "value": 80,
+                    "density": {
+                        "enable": true,
+                        "value_area": 800
+                    }
+                },
+                "color": {
+                    "value": "#0074fd"
+                },
+                "shape": {
+                    "type": "polygon",
+                    "stroke": {
+                        "width": 0,
+                        "color": "#0074fd"
+                    },
+                    "polygon": {
+                        "nb_sides": 5
+                    },
+                    "image": {
+                        "src": "img/github.svg",
+                        "width": 100,
+                        "height": 100
+                    }
+                },
+                "opacity": {
+                    "value": 0.5,
+                    "random": false,
+                    "anim": {
+                        "enable": false,
+                        "speed": 1,
+                        "opacity_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "size": {
+                    "value": 3,
+                    "random": true,
+                    "anim": {
+                        "enable": false,
+                        "speed": 40,
+                        "size_min": 0.1,
+                        "sync": false
+                    }
+                },
+                "line_linked": {
+                    "enable": true,
+                    "distance": 150,
+                    "color": "#0074fd",
+                    "opacity": 0.4,
+                    "width": 1
+                },
+                "move": {
+                    "enable": true,
+                    "speed": 6,
+                    "direction": "none",
+                    "random": false,
+                    "straight": false,
+                    "out_mode": "out",
+                    "bounce": false,
+                    "attract": {
+                        "enable": false,
+                        "rotateX": 600,
+                        "rotateY": 1200
+                    }
+                }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": {
+                        "enable": false,
+                        "mode": "repulse"
+                    },
+                    "onclick": {
+                        "enable": true,
+                        "mode": "push"
+                    },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": {
+                        "distance": 400,
+                        "line_linked": {
+                            "opacity": 1
+                        }
+                    },
+                    "bubble": {
+                        "distance": 400,
+                        "size": 40,
+                        "duration": 2,
+                        "opacity": 8,
+                        "speed": 3
+                    },
+                    "repulse": {
+                        "distance": 200,
+                        "duration": 0.4
+                    },
+                    "push": {
+                        "particles_nb": 4
+                    },
+                    "remove": {
+                        "particles_nb": 2
+                    }
+                }
+            },
+            "retina_detect": true
+        });
+        // var count_particles, stats, update;
+        // stats = new Stats;
+        // stats.setMode(0);
+        // stats.domElement.style.position = 'absolute';
+        // stats.domElement.style.left = '0px';
+        // stats.domElement.style.top = '0px';
+        // document.body.appendChild(stats.domElement);
+        // count_particles = document.querySelector('.js-count-particles');
+        // update = function () {
+        //     stats.begin();
+        //     stats.end();
+        //     if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+        //         count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+        //     }
+        //     requestAnimationFrame(update);
+        // };
+        // requestAnimationFrame(update);
+    </script>
+
+    <script>
+        // Check for saved user theme preference in localStorage
+        if (localStorage.getItem('color-theme') === 'dark' ||
+            (!localStorage.getItem('color-theme') && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const lightIcon = document.getElementById('theme-toggle-light-icon');
+        const darkIcon = document.getElementById('theme-toggle-dark-icon');
+
+        // Update icons based on the current theme
+        function updateIcons() {
+            if (document.documentElement.classList.contains('dark')) {
+                lightIcon.classList.add('hidden');
+                darkIcon.classList.remove('hidden');
+            } else {
+                darkIcon.classList.add('hidden');
+                lightIcon.classList.remove('hidden');
+            }
+        }
+
+        themeToggleBtn.addEventListener('click', () => {
+            // Toggle the `dark` class on the <html> element
+            document.documentElement.classList.toggle('dark');
+            // Update the icons
+            updateIcons();
+            // Save the user's preference in localStorage
+            if (document.documentElement.classList.contains('dark')) {
+                localStorage.setItem('color-theme', 'dark');
+            } else {
+                localStorage.setItem('color-theme', 'light');
+            }
+        });
+
+        // Initialize icons on page load
+        updateIcons();
+    </script>
+
+    <!-- page specific script -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js"></script>
+</body>
+
+</html>

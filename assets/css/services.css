@@ -1,0 +1,29 @@
+.services-container div:nth-child(3),
+.services-container div:nth-child(5),
+.services-container div:nth-child(7),
+.services-container div:nth-child(11),
+.services-container div:nth-child(15) {
+    background-color: white;
+    color: black;
+}
+
+
+.services-container :is(
+    div:nth-child(3),
+    div:nth-child(5),
+    div:nth-child(7),
+    div:nth-child(11),
+    div:nth-child(15)
+) h2 {
+    color: black;
+}
+
+.services-container :is(
+    div:nth-child(3),
+    div:nth-child(5),
+    div:nth-child(7),
+    div:nth-child(11),
+    div:nth-child(15)
+) p {
+    color: black;
+}

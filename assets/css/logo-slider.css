@@ -1,0 +1,34 @@
+.logo-slider {
+    overflow: hidden;
+    white-space: nowrap;
+    position: relative;
+    width: 100%;
+    background: #f8f8f8;
+    padding: 20px 0;
+  }
+  
+  .logo-track {
+    display: flex;
+    gap: 100px;
+    animation: scroll 10s linear infinite;
+  }
+  
+  .logo-track img {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+  }
+  
+  /* Infinite Scroll Animation */
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  .logo-slider:hover .logo-track {
+    animation-play-state: paused;
+  }

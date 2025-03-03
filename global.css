@@ -1,0 +1,12 @@
+* {
+    font-family: sans-serif;
+}
+
+#particles-js {
+    width: 100%;
+    height: 460px;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+}
